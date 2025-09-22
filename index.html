@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Page with Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page</h1>
+  </header>
+
+  <main>
+    <!-- Interactive Section 1 -->
+    <section>
+      <h2>Click Counter</h2>
+      <p>You have clicked the button <span id="clickCount">0</span> times.</p>
+      <button id="countBtn">Click Me</button>
+    </section>
+
+    <!-- Interactive Section 2 -->
+    <section>
+      <h2>Change Background Color</h2>
+      <button id="colorBtn">Change Color</button>
+    </section>
+
+    <!-- Custom Form with Validation -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username">
+        <small class="error" id="usernameError"></small><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter email">
+        <small class="error" id="emailError"></small><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <small class="error" id="passwordError"></small><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formSuccess" class="success"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Interactive Assignment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
